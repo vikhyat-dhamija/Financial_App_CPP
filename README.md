@@ -1,6 +1,8 @@
-                                        Project Description
+This repository consists of Project on Financial Application done during the course 16:332:503 - Programming Methodology for Finance - Fall 2019, Rutgers University.The detailed description of the project is given below:                                      
 
-Brief Description
+
+Project Description
+
 In this project/program , an abstract base class ‘Account’ has been created with two derived classes ‘StockAccount’ and ‘BankAccount’ connected with the balance(account_balance term used in my project for the cash balance).
 This implementation can be done by making the balance static but I have led the balances as two separate variables in the two classes and have them synchronized. 
 Further a file named account_balance has been created for storing the present value of the balance whenever the program exit. 
