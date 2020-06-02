@@ -1,14 +1,24 @@
-This repository consists of Project on Financial Application done during the course 16:332:503 - Programming Methodology for Finance - Fall 2019, Rutgers University.The detailed description of the project is given below:                                      
+<b>Programming Finance - Final Project - Financial Application</b>
+ 
 
-
+This repository consists of Project on Financial Application done during the course 16:332:503 - Programming Methodology 
+for Finance - Fall 2019, Rutgers University.The detailed description of the project is given below:                                      
+This repository consists of Project on Financial Application done during the course 16:332:503 - Programming Methodology 
+for Finance - Fall 2019, Rutgers University.The detailed description of the project is given below:                                      
 Project Description
 
-In this project/program , an abstract base class ‘Account’ has been created with two derived classes ‘StockAccount’ and ‘BankAccount’ connected with the balance(account_balance term used in my project for the cash balance).
-This implementation can be done by making the balance static but I have led the balances as two separate variables in the two classes and have them synchronized. 
+In this project/program , an abstract base class ‘Account’ has been created with two derived classes ‘StockAccount’ 
+and ‘BankAccount’ connected with the balance(account_balance term used in my project for the cash balance).
+This implementation can be done by making the balance static but I have led the balances as two separate variables in 
+the two classes and have them synchronized. 
 Further a file named account_balance has been created for storing the present value of the balance whenever the program exit. 
 And when the program starts the constructors of both classes make themselves loaded with the cash balance value from this static persistent file.
-Further during the first time when the file “account_balance.txt” is not there for storing the account balance value , then these values are loaded with the 10000 dollars value and the file is created in the local folder and then for further exit and start of the program , the balances in the objects of stockaccount and bankaccount classes are being loaded in and reloaded from that file only. So , staticness come here from the file stored in the local folder.
-Further , the two files “Result1.txt” and “Result2.txt” having the  same stock symbols with different prices for mimicking the stock market randomness have been used. So any time when the price of any stock has to be searched then randomly the price from any of the two files was used.
+Further during the first time when the file “account_balance.txt” is not there for storing the account balance value , then 
+these values are loaded with the 10000 dollars value and the file is created in the local folder and then for further exit and 
+start of the program , the balances in the objects of stockaccount and bankaccount classes are being loaded in and reloaded from 
+that file only. So , staticness come here from the file stored in the local folder.
+Further , the two files “Result1.txt” and “Result2.txt” having the  same stock symbols with different prices for mimicking the stock market randomness have been used. So any time when the price of any stock has to be searched then randomly the price from any 
+of the two files was used.
 Stock portfolio was stored in the circular doubly linked list. List template (showcasing the behavioral design pattern of templating)  was used for creating any type of list like singly , doubly etc. with common interfaces( methods) of insert , delete  etc. was used. Here I have created a derived class “doubly linked list” and the singly linked list has been shown here for just the reference as that can also be used, if implemented and hereby showcase the design pattern.
 Because list pointer is there inside the portfolio class which is used to abstract the implementation of the list . This Is what is the “ Structural Bridge design Pattern”.
 Further , stock portfolio in the doubly linked list was made to be sorted at all times in the decreasing order of the total value of any particular stock (i.e. number of shares * price per share). That is, after any update on your stock portfolio the  doubly linked list was maintained to keep it sorted.
@@ -279,7 +289,6 @@ File created and Used
 5.	“total_portfolio” for storing the total stock portfolio value and the current cash balance and the time stamp during the exit of the program.
 6.	“Result_1” and “Result_2” are being used for getting the stock value by the stock name.
 PLEASE: Note only the “Result_1” and  “Result_2” text files are required for getting the random stock value and all other files will be created in the current folder of the project. So for testing and running please first create the new project and then please add all the files or otherwise create all the above named empty txt files in the current folder of the project. 
-
 
 
 
